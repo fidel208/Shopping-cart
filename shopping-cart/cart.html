@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Cart</title>
-    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="shop.css" />
   </head>
   <body>
     <header>
-      <h1>
-        Shopping <br />
-        Cart
-      </h1>
+      <h1>Shopping Cart</h1>
       <nav class="top-nav">
-        <div><a href="index.html">Home</a></div>
-        <div><a href="shop.html">Shop</a></div>
-        <div><a href="#">Cart</a></div>
+        <a href="index.html">Homepage</a>
+        <a href="shop.html">Shop</a>
+        <a href="#" class="active">Cart (<span id="cart-count">0</span>)</a>
       </nav>
     </header>
     <aside>
@@ -28,5 +25,25 @@
         <div>Log out</div>
       </nav>
     </aside>
+    <main>
+      <section class="search">
+        <form>
+          <input
+            type="search"
+            placeholder="Search for items, products and gadgets"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+      <section class="items">
+        <h2>Cart</h2>
+        <div id="cart-container"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Fidempa</p>
+      <p>Finora Technologies</p>
+    </footer>
+    <script type="text/javascript" src="cart.js"></script>
   </body>
 </html>

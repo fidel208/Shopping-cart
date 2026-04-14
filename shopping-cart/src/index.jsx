@@ -8,46 +8,46 @@ export default function Homepage() {
   return (
     <>
       <header>
-        <h1>
-          Shopping Cart
-        </h1>
+        <h1>Shopping Cart</h1>
         <nav className="top-nav">
-          <div className="active">
-            <a href="#">Home</a>
-          </div>
-          <div>
-            <a href="shop.html">Shop</a>
-          </div>
-          <div>
-            <a href="cart.html">Cart</a>
-          </div>
+          <a href="#" className="active">Homepage</a>
+          <a href="shop.html">Shop</a>
+          <a href="cart.html">
+            Cart (<span id="cart-count">0</span>)
+          </a>
         </nav>
       </header>
       <aside>
-      <nav className="aside-nav">
-        <div>Profile</div>
-        <div>Settings</div>
-        <div>Help</div>
-        <div>Contact us</div>
-        <div>Log out</div>
-      </nav>
-    </aside>
-    <main>
-      <section className="search">
-        <form>
-          <input type="search" placeholder="Search for items, products and gadgets" />
-          <button type="submit">Search</button>
-        </form>
-      </section>
-      <section className="slide">
-        <div className="slider"></div>
-        <p>Hello, Welcome to our online store. <br /> We offer a variety of products that you can choose from</p>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2026 Fidempa</p>
-      <p>Finora Technologies</p>
-    </footer>
+        <nav className="aside-nav">
+          <div>Profile</div>
+          <div>Settings</div>
+          <div>Help</div>
+          <div>Contact us</div>
+          <div>Log out</div>
+        </nav>
+      </aside>
+      <main>
+        <section className="search">
+          <form>
+            <input
+              type="search"
+              placeholder="Search for items, products and gadgets"
+            />
+            <button type="submit">Search</button>
+          </form>
+        </section>
+        <section className="slide">
+          <div className="slider"></div>
+          <p>
+            Hello, Welcome to our online store. <br /> We offer a variety of
+            products that you can choose from
+          </p>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2026 Fidempa</p>
+        <p>Finora Technologies</p>
+      </footer>
     </>
   );
 }

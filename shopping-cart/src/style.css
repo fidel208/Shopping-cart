@@ -12,7 +12,7 @@ header {
   grid-template-rows: 100%;
   grid-template-columns: 20% 80%;
   text-align: center;
-  height: 100px;
+  height: 70px;
   background-color: lightblue;
 }
 header > h1 {
@@ -26,29 +26,26 @@ header > h1 {
   width: 100%;
   background-color: lightblue;
 }
-.top-nav > div {
-  height: 100px;
-  width: 33.3%;
-  text-align: center;
-}
-.top-nav > div > a {
+.top-nav > a {
   text-decoration: none;
   font-size: 30px;
-  width: 100%;
+  width: 33.3%;
   height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
   color: blue;
 }
-.top-nav > div > a:hover {
+.top-nav > a:hover {
+  background-color: blueviolet;
+  color: white;
+}
+.active {
   background-color: blueviolet;
   color: white;
 }
 aside {
   float: left;
   height: 100%;
-  background-color: rgb(105, 56, 10);
+  background-color: rgb(133, 82, 6);
   width: 300px;
   border-top: solid 1px white;
   width: 20%;
@@ -61,7 +58,7 @@ aside {
   border-bottom: solid 1px white;
   padding: 10px;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 .aside-nav > div:hover {
   background-color: rgb(3, 226, 41);
@@ -87,15 +84,17 @@ main {
   justify-content: center;
 }
 .search > form > input {
-  width: 600px;
+  width: 800px;
+  height: 50px;
   padding: 10px;
+  font-size: 20px;
   border-radius: 12px;
   border: none;
   outline: solid 1px grey;
 }
 .search > form > button {
   width: 100px;
-  height: 35px;
+  height: 50px;
   border-radius: 12px;
   outline: solid 1px grey;
   border: none;
