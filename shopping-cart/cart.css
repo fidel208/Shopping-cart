@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+}
+header {
+    display: flex;
+    text-align: center;
+    height: 100px;
+    background-color: lightblue;
+}
+header > h1 {
+    width: 350px;
+}
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    float: top;
+    width: 100%;
+    background-color: lightblue;
+}
+.top-nav > div {
+    height: 100px;
+    width: 33.3%;
+    text-align: center;
+}
+.top-nav > div > a {
+    text-decoration: none;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-nav > div > a:hover {
+    background-color: blueviolet;
+    color: white;
+}
+aside {
+    float: left;
+    height: 100%;
+    background-color: rgb(105, 56, 10);
+    width: 300px;
+    border-top: solid 1px white;
+}
+.aside-nav {
+    width: 100%;
+}
+.aside-nav > div {
+    height: 60px;
+    border-bottom: solid 1px white;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+}
+.aside-nav > div:hover {
+    background-color: lightblue;
+    color: blue;
+}
