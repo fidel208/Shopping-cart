@@ -9,7 +9,7 @@ export default function Homepage() {
     <>
       <header>
         <h1>
-          Shopping <br /> Cart
+          Shopping Cart
         </h1>
         <nav className="top-nav">
           <div className="active">
@@ -32,6 +32,22 @@ export default function Homepage() {
         <div>Log out</div>
       </nav>
     </aside>
+    <main>
+      <section className="search">
+        <form>
+          <input type="search" placeholder="Search for items, products and gadgets" />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+      <section className="slide">
+        <div className="slider"></div>
+        <p>Hello, Welcome to our online store. <br /> We offer a variety of products that you can choose from</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Fidempa</p>
+      <p>Finora Technologies</p>
+    </footer>
     </>
   );
 }
