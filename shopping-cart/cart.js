@@ -1,4 +1,3 @@
-// Display cart items
 function displayCart() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   let container = document.getElementById("cart-container");

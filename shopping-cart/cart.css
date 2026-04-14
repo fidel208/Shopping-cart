@@ -103,6 +103,67 @@ main {
   background-color: rgb(3, 226, 41);
   color: blue;
 }
+.items > h2 {
+  color: purple;
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+#cart-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.cart-item h3 {
+  font-size: 16px;
+  margin: 0;
+  flex: 2;
+  color: black;
+}
+
+.cart-item p {
+  flex: 1;
+  font-weight: bold;
+  color: black;
+}
+.cart-item button {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  background: #eee;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.cart-item button:hover {
+  background: #ddd;
+}
+
+.cart-item span {
+  min-width: 30px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+}
+.cart-item .remove {
+  background: #ff4d4d;
+  color: white;
+}
+
+.cart-item .remove:hover {
+  background: #e60000;
+}
 footer {
   clear: left;
   height: 100px;
